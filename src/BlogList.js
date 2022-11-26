@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { createClient } from 'contentful';
 import { Link } from 'react-router-dom';
-
+const API_KEY = process.env.REACT_APP_API_KEY;
 const BlogList = () => {
 	const [blogPosts, setBlogPosts] = useState([]);
 	const client = createClient({
 		space: 'xwccrbo381oo',
-		accessToken: 'gArx07ZUYcw63F-Enve2dOG_VhY4v2wYPEFpvki4oSE',
+		accessToken: API_KEY,
 	});
 
 	useEffect(() => {
@@ -27,19 +27,19 @@ const BlogList = () => {
 			<div className='content pure-u-1 pure-u-md-3-4'>
 				<div>
 					<div className='posts'>
-						<h1 className='content-subhead'>Web Dev Blog</h1>
+						<h1 className='content-subhead'>First Class Travel Hacks</h1>
 						{blogPosts?.items?.map((post) => (
 							<section className='post' key={post.sys.id}>
 								<header className='post-header'>
 									<h2 className='post-title pt-3'>{post.fields.title}</h2>
 									<p className='post-meta'>
 										By{' '}
-										<a href='https://thecodeangle.com/' className='post-author'>
+										<a className='post-author'>
 											{post.fields.blogAuthor}
 										</a>{' '}
 										Date <span></span>
 										<small>
-											{blogPosts?.fields?.createdDate.slice(0, 10)}
+											{blogPosts?.fields?.createdDate.slice()}
 										</small>
 									</p>
 								</header>

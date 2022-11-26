@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { createClient } from 'contentful';
 import { Link, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import { GlobalStyles } from '@contentful/f36-components';
+const API_KEY = process.env.REACT_APP_API_KEY;
 const SingleBlog = () => {
 	const [singleBlogPost, setSingleBlogPost] = useState([]);
 
@@ -10,7 +10,7 @@ const SingleBlog = () => {
 
 	const client = createClient({
 		space: 'xwccrbo381oo',
-		accessToken: 'gArx07ZUYcw63F-Enve2dOG_VhY4v2wYPEFpvki4oSE',
+		accessToken: API_KEY,
 	});
 
 	useEffect(() => {
@@ -44,6 +44,7 @@ console.log(singleBlogPost.fields);
 									width='578'
 									height='291'
 								/>
+
 								<h2 className='post-title pt-3'>
 									{singleBlogPost?.fields?.title}
 								</h2>
@@ -52,15 +53,29 @@ console.log(singleBlogPost.fields);
 								</h2>
 								<p className='post-meta'>
 									By{' '}
-									<a href='https://thecodeangle.com/' className='post-author'>
+									<a className='post-author'>
 										{singleBlogPost?.fields?.blogAuthor}
 									</a>{' '}
 									Date: <span></span>
-									<small>{singleBlogPost?.fields?.createdDate.slice(0,10)}</small>
+									<small>
+										{singleBlogPost?.fields?.createdDate.slice(0, 10)}
+									</small>
 								</p>
 							</header>
 							<div className='post-description'>
 								<ReactMarkdown children={singleBlogPost?.fields?.postContent} />
+							</div>
+							<div>{singleBlogPost?.fields?.blogImage2?.fields?.title}</div>
+							<img
+								src={singleBlogPost?.fields?.blogImage2?.fields?.file?.url}
+								title=''
+								alt={singleBlogPost?.fields?.title}
+								width='578'
+								height='291'
+							/>
+
+							<div>
+								{singleBlogPost?.fields?.blogImage2?.fields?.description}
 							</div>
 						</section>
 					</div>
