@@ -166,7 +166,7 @@ h3 {
 .button {
   background-color: #515151;
   /* Green */
-  border: 1.5px solid black;
+  border: 1.5px solid rgb(37, 37, 37);
   color: white;
   text-align: center;
   text-decoration: none;
@@ -216,7 +216,7 @@ border-radius: 5px;
   background-color: gray;
 }
 
-.post{
+section.post{
   border: 3px solid black;
   margin: 10px;
 }

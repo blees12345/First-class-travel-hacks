@@ -35,7 +35,7 @@ console.log(singleBlogPost.fields);
 							Travel Blog
 						</Link>
 
-						<section className='post'>
+						<section className='single-post'>
 							<header className='post-header'>
 								<img
 									src={singleBlogPost?.fields?.blogImage?.fields?.file?.url}

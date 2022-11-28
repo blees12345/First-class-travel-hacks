@@ -22,7 +22,7 @@ const BlogList = () => {
 		};
 		getAllEntries();
 	}, []);
-// console.log(blogPosts);
+console.log(blogPosts);
 	return (
 		<div id='layout' className='pure-g'>
 			<div className='content pure-u-1 pure-u-md-3-4'>
@@ -33,14 +33,9 @@ const BlogList = () => {
 								<header className='post-header'>
 									<h2 className='post-title pt-3'>{post.fields.title}</h2>
 									<p className='post-meta'>
-										By{' '}
-										<a className='post-author'>
-											{post.fields.blogAuthor}
-										</a>{' '}
+										By <a className='post-author'>{post.fields.blogAuthor}</a>{' '}
 										Date <span></span>
-										<small>
-											{blogPosts?.fields?.createdDate.slice()}
-										</small>
+										<small>{post.fields.createdDate.slice(0, 10)}</small>
 									</p>
 								</header>
 								<div className='post-description'>
