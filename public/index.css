@@ -188,3 +188,11 @@ h3 {
         text-align: center;
     }
 }
+
+.navbar .rs-nav .rs-nav-default .rs-nav-horizontal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border: 5px solid green
+}
