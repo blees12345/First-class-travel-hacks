@@ -26,6 +26,7 @@ h3 {
 
 #layout {
   padding: 0;
+ 
 }
 
 .header {
@@ -207,4 +208,13 @@ border-radius: 5px;
 .navbar{
   
   background-color: gray;
+}
+
+.post{
+  border: 3px solid black;
+  margin: 10px;
+}
+
+.post-header{
+  
 }
