@@ -16,7 +16,7 @@ function App() {
 
 					<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 					<Navbar.Collapse id='responsive-navbar-nav'>
-						<Nav className='me-auto'>
+						<Nav className='navLinks'>
 							<Nav.Link href='#miles&redemption'>
 								Points & Miles Redemption
 							</Nav.Link>
