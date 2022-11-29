@@ -24,7 +24,7 @@ const BlogList = () => {
 	}, []);
 console.log(blogPosts);
 	return (
-		<div id='layout' className='pure-g'>
+		<div  className='blogPosts'>
 			<div className='content pure-u-1 pure-u-md-3-4'>
 				<div>
 					<div className='posts'>

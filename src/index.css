@@ -96,6 +96,7 @@ img{
 }
 .post {
   padding-bottom: 2em;
+  
 }
 
 .post-title {
@@ -167,7 +168,7 @@ img{
 
 .button {
   background-color: #515151;
-  /* Green */
+  
   border: 1.5px solid rgb(37, 37, 37);
   color: white;
   text-align: center;
@@ -179,7 +180,6 @@ img{
   margin: 0px 20px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.4s;
 
 }
@@ -227,8 +227,16 @@ border-radius: 5px;
 section.post{
   border: 3px solid black;
   margin: 10px;
+
 }
 .singleBlog{
   max-width: 100vw;
   border: 5px solid black;
+}
+
+@media screen and (min-width: 1400px) {
+  section.post {
+    max-width: 700px;
+    
+  }
 }
