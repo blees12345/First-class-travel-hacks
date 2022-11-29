@@ -27,8 +27,8 @@ const SingleBlog = () => {
 	}, [id]);
 console.log(singleBlogPost.fields);
 	return (
-		<div id='layout' className='pure-g'>
-			<div className='content pure-u-1 pure-u-md-3-4'>
+		<div className='singleBlog' >
+			<div className=''>
 				<div>
 					<div className='posts'>
 						<Link to='/blogList' className='content-subhead'>

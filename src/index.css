@@ -91,7 +91,9 @@ h3 {
 .content {
   padding: 2em 1em 0;
 }
-
+img{
+  max-width: 100vw;
+}
 .post {
   padding-bottom: 2em;
 }
@@ -142,12 +144,12 @@ h3 {
 .post-category-js {
   background: #F0DB4F;
 }
-
+.post-header{
+ 
+}
 .post-images {
   margin: 1em 0;
-  
 }
-
 
 .footer {
   padding: 1em 0;
@@ -222,7 +224,7 @@ section.post{
   border: 3px solid black;
   margin: 10px;
 }
-
-.post-description{
-  
+.singleBlog{
+  max-width: 100vw;
+  border: 5px solid black;
 }
