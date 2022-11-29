@@ -212,8 +212,10 @@ border-radius: 5px;
 }
 
 .navbar{
-  
   background-color: gray;
+}
+.navbar-brand{
+  margin-left: 35px;
 }
 
 section.post{
