@@ -27,7 +27,7 @@ const SingleBlog = () => {
 	}, [id]);
 console.log(singleBlogPost.fields);
 	return (
-		<div className='singleBlog' >
+		<div className='singleBlog'>
 			<div className=''>
 				<div>
 					<div className='posts'>
@@ -70,13 +70,9 @@ console.log(singleBlogPost.fields);
 								src={singleBlogPost?.fields?.blogImage2?.fields?.file?.url}
 								title=''
 								alt={singleBlogPost?.fields?.title}
-								width='578'
-								height='291'
+							
 							/>
-
-							<div>
-								{singleBlogPost?.fields?.blogImage2?.fields?.description}
-							</div>
+							
 						</section>
 					</div>
 					<div className='footer'>
