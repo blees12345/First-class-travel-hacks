@@ -1,6 +1,7 @@
 import './App.css';
 import BlogList from './BlogList';
 import SingleBlog from './SingleBlog';
+import PointsAndMiles from './PointsMilesGuide'
 import { BrowserRouter as Router, Route, Routes,Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,23 +18,23 @@ function App() {
 					<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 					<Navbar.Collapse id='responsive-navbar-nav'>
 						<Nav className='navLinks'>
-							<Nav.Link href='#miles&redemption'>
+							<Link to='/PointsAndMilesGuide'>
+								<Nav.Link href='/PointsAndMilesGuide'>Points And Miles Guide</Nav.Link>
+							</Link>
+
+							<Nav.Link href='/miles&redemption'>
 								Points & Miles Redemption
 							</Nav.Link>
-							<Nav.Link href='#creditcards'>Credit Cards</Nav.Link>
-							<Nav.Link href='#'>Travel Hack Intro</Nav.Link>
+							<Nav.Link href='/creditcards'>Credit Cards</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
 				<Routes>
-					
-						 <Route path='/blogDetails/:id' element={<SingleBlog />} />
-						<Route path='/blogList' element={<BlogList />} />
-						 <Route path='/' element={<BlogList />} />
-						{' '}
-					
+					<Route path='/PointsAndMilesGuide' element={<PointsAndMiles/>} />
+					<Route path='/blogDetails/:id' element={<SingleBlog />} />
+					<Route path='/blogList' element={<BlogList />} />
+					<Route path='/' element={<BlogList />} />
 				</Routes>
-				
 			</Router>
 		</div>
 		// <Router>

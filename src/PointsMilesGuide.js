@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { createClient } from 'contentful';
 import { Link, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+
 const API_KEY = process.env.REACT_APP_API_KEY;
-const SingleBlog = () => {
-	const [singleBlogPost, setSingleBlogPost] = useState([]);
+const PointsAndMilesGuide = () => {
+	const [singlePost, setSinglePost] = useState([]);
 
 	let { id } = useParams();
 
@@ -17,7 +18,7 @@ const SingleBlog = () => {
 		const getEntryById = async () => {
 			try {
 				await client.getEntry(id).then((entries) => {
-					setSingleBlogPost(entries);
+					setSinglePost(entries);
 				});
 			} catch (error) {
 				console.log(`Error fetching authors ${error}`);
@@ -25,54 +26,52 @@ const SingleBlog = () => {
 		};
 		getEntryById();
 	}, [id]);
-// console.log(singleBlogPost.fields);
+	console.log(singlePost.fields);
 	return (
 		<div className='singleBlog'>
 			<div className=''>
 				<div>
 					<div className='posts'>
-						<Link to='/blogList' className='content-subhead'>
+						<Link to='/PointsAndMilesGuide' className='content-subhead'>
 							Travel Blog
 						</Link>
 
 						<section className='single-post'>
 							<header className='post-header'>
 								<img
-									src={singleBlogPost?.fields?.blogImage?.fields?.file?.url}
+									src={singlePost?.fields?.blogImage?.fields?.file?.url}
 									title=''
-									alt={singleBlogPost?.fields?.title}
+									alt={singlePost?.fields?.title}
 									width='578'
 									height='291'
 								/>
 
 								<h2 className='post-title pt-3'>
-									{singleBlogPost?.fields?.title}
+									{singlePost?.fields?.title}
 								</h2>
 								<h2 className='post-title pt-3'>
-									{singleBlogPost?.fields?.blogTitle}
+									{singlePost?.fields?.blogTitle}
 								</h2>
 								<p className='post-meta'>
 									By{' '}
 									<a className='post-author'>
-										{singleBlogPost?.fields?.blogAuthor}
+										{singlePost?.fields?.blogAuthor}
 									</a>{' '}
 									Date: <span></span>
 									<small>
-										{singleBlogPost?.fields?.createdDate.slice(0, 10)}
+										{singlePost?.fields?.createdDate.slice(0, 10)}
 									</small>
 								</p>
 							</header>
 							<div className='post-description'>
-								<ReactMarkdown children={singleBlogPost?.fields?.postContent} />
+								<ReactMarkdown children={singlePost?.fields?.postContent} />
 							</div>
-							<div>{singleBlogPost?.fields?.blogImage2?.fields?.title}</div>
+							<div>{singlePost?.fields?.blogImage2?.fields?.title}</div>
 							<img
-								src={singleBlogPost?.fields?.blogImage2?.fields?.file?.url}
+								src={singlePost?.fields?.blogImage2?.fields?.file?.url}
 								title=''
-								alt={singleBlogPost?.fields?.title}
-							
+								alt={singlePost?.fields?.title}
 							/>
-							
 						</section>
 					</div>
 					<div className='footer'>
@@ -84,4 +83,4 @@ const SingleBlog = () => {
 	);
 };
 
-export default SingleBlog;
+export default PointsAndMilesGuide;
