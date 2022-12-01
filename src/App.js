@@ -2,7 +2,7 @@ import './App.css';
 import BlogList from './BlogList';
 import SingleBlog from './SingleBlog';
 import PointsAndMiles from './PointsMilesGuide'
-import { BrowserRouter as Router, Route, Routes,Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes,Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar,} from 'react-bootstrap';
 function App() {
@@ -36,14 +36,7 @@ function App() {
 				</Routes>
 			</Router>
 		</div>
-		// <Router>
-		// 			<Routes>
-
-		// 				<Route path='/blogDetails/:id' element={<SingleBlog />} />
-		// 				<Route path='/blogList' element={<BlogList />} />
-		// 				<Route path='/' element={<BlogList />} />
-		// 			</Routes>
-		// 		</Router>
+	
 	);
 }
 
