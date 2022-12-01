@@ -3,7 +3,6 @@ import BlogList from './BlogList';
 import SingleBlog from './SingleBlog';
 import PointsAndMiles from './PointsMilesGuide'
 import { BrowserRouter as Router, Route, Routes,Link } from 'react-router-dom';
-import NavBar from './NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar,} from 'react-bootstrap';
 function App() {
@@ -18,9 +17,9 @@ function App() {
 					<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 					<Navbar.Collapse id='responsive-navbar-nav'>
 						<Nav className='navLinks'>
-							<Link to='/PointsAndMilesGuide'>
-								<Nav.Link href='/PointsAndMilesGuide'>Points And Miles Guide</Nav.Link>
-							</Link>
+							<Nav.Link href='/blogDetails/6Eow2G8YqMfSUfmJqGDyYC'>
+								Points And Miles Guide
+							</Nav.Link>
 
 							<Nav.Link href='/miles&redemption'>
 								Points & Miles Redemption
@@ -30,7 +29,7 @@ function App() {
 					</Navbar.Collapse>
 				</Navbar>
 				<Routes>
-					<Route path='/PointsAndMilesGuide' element={<PointsAndMiles/>} />
+					<Route path='/PointsAndMilesGuide' element={<PointsAndMiles />} />
 					<Route path='/blogDetails/:id' element={<SingleBlog />} />
 					<Route path='/blogList' element={<BlogList />} />
 					<Route path='/' element={<BlogList />} />
