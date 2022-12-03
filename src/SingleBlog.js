@@ -28,57 +28,47 @@ const SingleBlog = () => {
 // console.log(singleBlogPost.fields);
 	return (
 		<div className='singleBlog'>
-			<div className=''>
-				<div>
-					<div className='posts'>
-						<Link to='/blogList' className='content-subhead'>
-							Travel Blog
-						</Link>
+			<Link to='/blogList' className='content-subhead'>
+					Travel Blog
+				</Link>
 
-						<section className='single-post'>
-							<header className='post-header'>
-								<img
-									src={singleBlogPost?.fields?.blogImage?.fields?.file?.url}
-									title=''
-									alt={singleBlogPost?.fields?.title}
-									width='578'
-									height='291'
-								/>
+				<section className='single-post'>
+					<header className='post-header'>
+						<img
+							src={singleBlogPost?.fields?.blogImage?.fields?.file?.url}
+							alt={singleBlogPost?.fields?.title}
+							width='578'
+							height='291'
+						/>
 
-								<h2 className='post-title pt-3'>
-									{singleBlogPost?.fields?.title}
-								</h2>
-								<h2 className='post-title pt-3'>
-									{singleBlogPost?.fields?.blogTitle}
-								</h2>
-								<p className='post-meta'>
-									By{' '}
-									<a className='post-author'>
-										{singleBlogPost?.fields?.blogAuthor}
-									</a>{' '}
-									Date: <span></span>
-									<small>
-										{singleBlogPost?.fields?.createdDate.slice(0, 10)}
-									</small>
-								</p>
-							</header>
-							<div className='post-description'>
-								<ReactMarkdown children={singleBlogPost?.fields?.postContent} />
-							</div>
-							<div>{singleBlogPost?.fields?.blogImage2?.fields?.title}</div>
-							<img
-								src={singleBlogPost?.fields?.blogImage2?.fields?.file?.url}
-								title=''
-								alt={singleBlogPost?.fields?.title}
-							
-							/>
-							
-						</section>
+						<h2 className='post-title '>{singleBlogPost?.fields?.title}</h2>
+						<h2 className='post-title'>
+							{singleBlogPost?.fields?.blogTitle}
+						</h2>
+						<p className='post-meta'>
+							By{' '}
+							<a className='post-author'>
+								{singleBlogPost?.fields?.blogAuthor}
+							</a>{' '}
+							Date: <span></span>
+							<small>{singleBlogPost?.fields?.createdDate.slice(0, 10)}</small>
+						</p>
+					</header>
+					<div className='post-description'>
+						<ReactMarkdown children={singleBlogPost?.fields?.postContent} />
 					</div>
-					<div className='footer'>
-						<div className='pure-menu pure-menu-horizontal'></div>
+					<div className='images'>
+					
+						<img
+							src={singleBlogPost?.fields?.blogImage2?.fields?.file?.url}
+							title=''
+							alt={singleBlogPost?.fields?.title}
+						/>
 					</div>
-				</div>
+				</section>
+			
+			<div className='footer'>
+				<div className='pure-menu pure-menu-horizontal'></div>
 			</div>
 		</div>
 	);

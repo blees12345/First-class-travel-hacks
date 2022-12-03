@@ -17,7 +17,7 @@ function App() {
 					<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 					<Navbar.Collapse id='responsive-navbar-nav'>
 						<Nav className='navLinks'>
-							<Nav.Link href='/blogDetails/6Eow2G8YqMfSUfmJqGDyYC'>
+							<Nav.Link href='blogDetails/6Eow2G8YqMfSUfmJqGDyYC#/blogDetails/6Eow2G8YqMfSUfmJqGDyYC'>
 								Points And Miles Guide
 							</Nav.Link>
 
@@ -36,7 +36,6 @@ function App() {
 				</Routes>
 			</Router>
 		</div>
-	
 	);
 }
 
