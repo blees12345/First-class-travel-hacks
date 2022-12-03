@@ -238,8 +238,6 @@ padding-bottom: 20px;
 }
 @media screen and (min-width: 1400px) {
  .posts {
- 
-   width: 1000px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -274,5 +272,7 @@ padding-bottom: 20px;
     .post-title  {
       padding-left: 12%;
     }
-  
+  img{
+    max-width: 800px;
+  }
 }

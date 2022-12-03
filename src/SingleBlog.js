@@ -28,10 +28,6 @@ const SingleBlog = () => {
 // console.log(singleBlogPost.fields);
 	return (
 		<div className='singleBlog'>
-			<Link to='/blogList' className='content-subhead'>
-					Travel Blog
-				</Link>
-
 				<section className='single-post'>
 					<header className='post-header'>
 						<img
