@@ -30,7 +30,7 @@ const BlogList = () => {
 					<div className='posts'>
 						{blogPosts?.items?.map((post) => (
 							<section className='post' key={post.sys.id}>
-								<header className='post-header'>
+								<header className='posts-header'>
 									<h2 className='post-title pt-3'>{post.fields.title}</h2>
 									<p className='post-meta'>
 										By <a className='post-author'>{post.fields.blogAuthor}</a>{' '}
