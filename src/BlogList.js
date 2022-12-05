@@ -22,7 +22,7 @@ const BlogList = () => {
 		};
 		getAllEntries();
 	}, []);
-console.log(blogPosts);
+// console.log(blogPosts);
 	return (
 		<div  className='blogPosts'>
 			<div className='content pure-u-1 pure-u-md-3-4'>
