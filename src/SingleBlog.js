@@ -54,14 +54,12 @@ const SingleBlog = () => {
 					<div className='post-description'>
 						<ReactMarkdown children={singleBlogPost?.fields?.postContent} />
 					</div>
-					<div className='images'>
-					
-						<img
+						<img className='image'
 							src={singleBlogPost?.fields?.blogImage2?.fields?.file?.url}
 							title=''
 							alt={singleBlogPost?.fields?.title}
 						/>
-					</div>
+					
 				</section>
 			
 			<div className='footer'>

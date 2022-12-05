@@ -1,7 +1,8 @@
 import './App.css';
 import BlogList from './BlogList';
 import SingleBlog from './SingleBlog';
-import PointsAndMiles from './PointsMilesGuide'
+import PointsAndMiles from './PointsMilesGuide';
+import EarningMiles from './EarningMiles';
 import { HashRouter as Router, Route, Routes,Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar,} from 'react-bootstrap';
@@ -21,10 +22,13 @@ function App() {
 								Points And Miles Guide
 							</Nav.Link>
 
+							<Nav.Link href='blogDetails/3mLKIIfhloEtK1ySi9zit8#/blogDetails/3mLKIIfhloEtK1ySi9zit8'>
+								Earning Points & Miles
+							</Nav.Link>
+							<Nav.Link href='/creditcards'>Credit Cards</Nav.Link>
 							<Nav.Link href='/miles&redemption'>
 								Points & Miles Redemption
 							</Nav.Link>
-							<Nav.Link href='/creditcards'>Credit Cards</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
@@ -33,6 +37,7 @@ function App() {
 					<Route path='/blogDetails/:id' element={<SingleBlog />} />
 					<Route path='/blogList' element={<BlogList />} />
 					<Route path='/' element={<BlogList />} />
+					<Route path='/EarningMiles&Points' element={<EarningMiles />} />
 				</Routes>
 			</Router>
 		</div>
