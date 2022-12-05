@@ -22,10 +22,11 @@ const SingleBlog = () => {
 			} catch (error) {
 				console.log(`Error fetching authors ${error}`);
 			}
+			console.log(client.getEntry(id.then))
 		};
 		getEntryById();
 	}, [id]);
-// console.log(singleBlogPost.fields);
+// console.log(getEntryById);
 	return (
 		<div className='singleBlog'>
 				<section className='single-post'>

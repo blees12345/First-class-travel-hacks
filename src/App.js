@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar,} from 'react-bootstrap';
 function App() {
 	return (
-		<div>
+		<div className='main'>
 			<Router>
 				<Navbar collapseOnSelect expand='lg' variant='dark'>
 					<Link to='/'>

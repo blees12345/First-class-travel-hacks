@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+ 
 }
 
 a {
@@ -99,13 +100,6 @@ img{
   flex-direction: column;
   flex-direction: column;
   justify-content: center;
-  
-}
-
-.post-title {
-  font-size: 2em;
-  color: #222;
-  margin-bottom: 0.2em;
 }
 
 .post-logo {
@@ -118,19 +112,23 @@ img{
 .post-description {
   font-family: Georgia, "Cambria", serif;
   color: rgb(109, 109, 109);
-  line-height: 1.8em; 
+  height: 30px;
+  margin-right: 20px;
+  height: 100%;
 }
-
+.post-title{
+  padding-left: 35px;
+}
 .post-description img{
 
   max-width:40vw;
   max-height: 70vh;
-  
+
 }
 .post-meta {
   color: #999;
   font-size: 90%;
-  margin: 0;
+  height: 25px;
 }
 
 .post-category {
@@ -144,9 +142,7 @@ img{
 .post-category-js {
   background: #F0DB4F;
 }
-.post-header{
- 
-}
+
 .post-images {
   margin: 1em 0;
 }
@@ -256,6 +252,7 @@ padding-bottom: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 50px;
   }
   .single-post{
    width: 1000px;

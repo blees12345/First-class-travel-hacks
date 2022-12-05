@@ -24,28 +24,28 @@ const BlogList = () => {
 	}, []);
 // console.log(blogPosts);
 	return (
-		<div  className='blogPosts'>
+		<div className='blogPosts'>
 			<div className='content pure-u-1 pure-u-md-3-4'>
 				<div>
 					<div className='posts'>
 						{blogPosts?.items?.map((post) => (
 							<section className='post' key={post.sys.id}>
+								<div className='post-description'>
+									<p>{post.fields.blogSummary}</p>
+								</div>
 								<header className='posts-header'>
-									<h2 className='post-title pt-3'>{post.fields.title}</h2>
+									<h2 className='post-title'>{post.fields.title}</h2>
 									<p className='post-meta'>
 										By <a className='post-author'>{post.fields.blogAuthor}</a>{' '}
 										Date <span></span>
 										<small>{post.fields.createdDate.slice(0, 10)}</small>
 									</p>
 								</header>
-								<div className='post-description'>
-									<p>{post.fields.blogSummary}</p>
-									<Link
-										to={`/blogDetails/${post.sys.id}`}
-										className='button button1'>
-										Read More
-									</Link>
-								</div>
+								<Link
+									to={`/blogDetails/${post.sys.id}`}
+									className='button button1'>
+									Read More
+								</Link>
 							</section>
 						))}
 					</div>
