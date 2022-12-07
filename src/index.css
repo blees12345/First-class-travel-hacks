@@ -112,9 +112,8 @@ img{
 .post-description {
   font-family: Georgia, "Cambria", serif;
   color: rgb(109, 109, 109);
-  height: 30px;
-  margin-right: 20px;
-  height: 100%;
+  margin-top: 15px;
+  margin-bottom: -15px;
 }
 .post-title{
   padding-left: 35px;
@@ -125,6 +124,7 @@ img{
   max-height: 70vh;
 
 }
+
 .post-meta {
   color: #999;
   font-size: 90%;
@@ -243,7 +243,7 @@ padding-bottom: 20px;
     width: 300px;
   }
   .post{
-    width: 700px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -253,6 +253,8 @@ padding-bottom: 20px;
     align-items: center;
     flex-direction: column;
     height: 50px;
+    width: 500px;
+    margin-right: 50px;
   }
   .single-post{
    width: 1000px;
@@ -278,6 +280,7 @@ padding-bottom: 20px;
     width: 50%;
   }
   .image{
-  margin-top: 830px;
+  margin-top: 850px;
   }
+ 
 }
