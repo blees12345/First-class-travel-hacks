@@ -234,7 +234,6 @@ img{
 
 .fade.modal.show{
   width: 100vw;
-  margin-left: ;
   padding: 0;
 }
 @media (min-width: 48em) {
@@ -324,7 +323,6 @@ padding-bottom: 20px;
       padding-left: 12%;
     }
   img{
-
     max-width: 800px;
   }
   .posts-header{
@@ -334,5 +332,23 @@ padding-bottom: 20px;
   .image{
   margin-top: 850px;
   }
- 
+
+}
+@media screen and (min-width: 576px) {
+  .modal-header {
+  margin-left: 23%;
+    }
+  .modal-body{
+    width: 100%;
+   
+  }
+    .vaca {
+      height: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+    .Modal{
+      height: 100vh;
+      
+    }
 }
