@@ -6,10 +6,14 @@ import EarningMiles from './EarningMiles';
 import { HashRouter as Router, Route, Routes,Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar,} from 'react-bootstrap';
+import vacation from './vacation.jpg';
+import HomeModal from './HomeModal';
 function App() {
 	return (
 		<div className='main'>
+				<HomeModal></HomeModal>
 			<Router>
+		
 				<Navbar collapseOnSelect expand='lg' variant='dark'>
 					<Link to='/'>
 						<Navbar.Brand href='#home'>First Class Travel Hacks</Navbar.Brand>
