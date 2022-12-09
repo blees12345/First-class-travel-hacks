@@ -11,9 +11,7 @@ import HomeModal from './HomeModal';
 function App() {
 	return (
 		<div className='main'>
-				<HomeModal></HomeModal>
 			<Router>
-		
 				<Navbar collapseOnSelect expand='lg' variant='dark'>
 					<Link to='/'>
 						<Navbar.Brand href='#home'>First Class Travel Hacks</Navbar.Brand>
@@ -21,7 +19,7 @@ function App() {
 
 					<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 					<Navbar.Collapse id='responsive-navbar-nav'>
-						<Nav className='navLinks'>
+						<Nav  className='navLinks'>
 							<Nav.Link href='blogDetails/6Eow2G8YqMfSUfmJqGDyYC#/blogDetails/6Eow2G8YqMfSUfmJqGDyYC'>
 								Points And Miles Guide
 							</Nav.Link>

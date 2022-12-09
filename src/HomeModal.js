@@ -1,18 +1,44 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useSession } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import vacation from './vacation.jpg';
+
 function HomePage() {
 	const [show, setShow] = useState(true);
+	
 	const handleClose = () => setShow(false);
+	 useEffect(() => {
+		
+			const timeout = setTimeout(() => {
+				setShow(false);
+			}, 3000);
+		}, []);
+
+
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-		const timeout = setTimeout(() => {
-			setShow(false);
-		}, 3000);
-	}, []);
+    // Access count value from session storage
+    var pageView = sessionStorage.getItem("pageView");
+    if (pageView == null ) {
+			// Initialize page views count
+			pageView = 0;
+	}	else  {
+			pageView = Number(pageView) + 1;
+		};
+	if(pageView >2){
+		return setShow(false)
+	}
+		
+	 console.log(pageView);
+    // Update session storage
+    sessionStorage.setItem("pageView", pageView);
+    setCount(pageView);
+  }, []); 
+//  sessionStorage.clear();
+  console.log(count)
 	return (
-		<div onclick={() => setShow(false)}  >
+		<div onClick={() => setShow(false)}  >
 			<Modal contentClassName='Modal' show={show} onHide={() => setShow(false)}>
 				<Modal.Header className='modal-header' closeButton>
 					First Class Travel Hacks
@@ -29,7 +55,7 @@ function HomePage() {
 						Learn More!
 					</button>
 				</Modal.Body>
-			</Modal>
+			</Modal >
 		</div>
 	);
 }

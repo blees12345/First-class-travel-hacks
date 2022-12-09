@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { createClient } from 'contentful';
 import { Link } from 'react-router-dom';
 import { Nav } from 'rsuite';
+import HomeModal from './HomeModal';
 const API_KEY = process.env.REACT_APP_API_KEY;
 const BlogList = () => {
 	const [blogPosts, setBlogPosts] = useState([]);
@@ -22,9 +23,11 @@ const BlogList = () => {
 		};
 		getAllEntries();
 	}, []);
-// console.log(blogPosts);
+	
+
 	return (
 		<div className='blogPosts'>
+			<HomeModal/>
 			<div className='content pure-u-1 pure-u-md-3-4'>
 				<div>
 					<div className='posts'>
