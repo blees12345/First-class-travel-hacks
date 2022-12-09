@@ -26,17 +26,17 @@ function HomePage() {
 	}	else  {
 			pageView = Number(pageView) + 1;
 		};
-	if(pageView >1){
+	if(pageView == 1){
 		return setShow(false)
 	}
 		
-	 console.log(pageView);
+	 
     // Update session storage
     sessionStorage.setItem("pageView", pageView);
     setCount(pageView);
   }, []); 
 //  sessionStorage.clear();
-//   console.log(count)
+
 	return (
 		<div onClick={() => setShow(false)}  >
 			<Modal contentClassName='Modal' show={show} onHide={() => setShow(false)}>

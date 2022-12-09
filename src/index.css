@@ -47,7 +47,9 @@ a:focus {
 }
 
 .button1 {
+  margin-top: 20px;
   border-radius: 5px;
+  width: 35%;
 }
 
 .content-subhead {
@@ -172,7 +174,7 @@ img{
 .post{
   display: flex;
   flex-direction: column;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
