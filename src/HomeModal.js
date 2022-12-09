@@ -26,7 +26,7 @@ function HomePage() {
 	}	else  {
 			pageView = Number(pageView) + 1;
 		};
-	if(pageView >2){
+	if(pageView >1){
 		return setShow(false)
 	}
 		
@@ -36,7 +36,7 @@ function HomePage() {
     setCount(pageView);
   }, []); 
 //  sessionStorage.clear();
-  console.log(count)
+//   console.log(count)
 	return (
 		<div onClick={() => setShow(false)}  >
 			<Modal contentClassName='Modal' show={show} onHide={() => setShow(false)}>
