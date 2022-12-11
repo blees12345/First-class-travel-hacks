@@ -30,8 +30,8 @@ a:focus {
   color: rgb(176, 202, 219);
 }
 .button {
-  background-color: #515151;
-  border: 1.5px solid rgb(37, 37, 37);
+  background-color: #353535;
+  border: 2px solid rgb(87, 87, 87);
   color: white;
   text-align: center;
   text-decoration: none;
