@@ -24,7 +24,9 @@ a:focus {
 .brand-title {
   text-transform: uppercase;
 }
-
+.blogPosts{
+  background: linear-gradient(#f5deb3, #faf0e6);
+}
 .brand-tagline {
   font-weight: 300;
   color: rgb(176, 202, 219);
@@ -187,9 +189,10 @@ img{
 
 .post-description {
   font-family: Georgia, "Cambria", serif;
-  color: rgb(109, 109, 109);
+  color: rgb(0, 0, 0);
   margin-top: 15px;
   margin-bottom: -15px;
+  font-size: 17px;
 }
 .post-title{
   padding-left: 35px;
@@ -308,6 +311,7 @@ padding-bottom: 20px;
     height: 50px;
     width: 500px;
     margin-right: 50px;
+    font-size: 20px;
   }
   .single-post{
    width: 1000px;
