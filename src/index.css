@@ -25,7 +25,8 @@ a:focus {
   text-transform: uppercase;
 }
 .blogPosts{
-  background: linear-gradient(#f5deb3, #faf0e6);
+  height: 100vw;
+  background: linear-gradient(0.25turn, #fff0d1, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff, #fff0d1);
 }
 .brand-tagline {
   font-weight: 300;
@@ -264,14 +265,21 @@ img{
 
 }
 .navbar{
-  background-color: gray;
+  background: linear-gradient(#e1d0b0, #fada9d);
+ 
 }
 
 .navLinks{
   margin-left: 35px;
+  
 }
+
 .navbar-brand{
   margin-left: 35px;
+}
+.navLinks .nav-link{
+  color:black;
+  font-weight: 600;
 }
 p{
   padding-left: 10%;
