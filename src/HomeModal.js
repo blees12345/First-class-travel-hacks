@@ -11,7 +11,7 @@ function HomePage() {
 		
 			const timeout = setTimeout(() => {
 				setShow(false);
-			}, 3000);
+			}, );
 		}, []);
 
 
