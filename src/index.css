@@ -25,6 +25,7 @@ a:focus {
   text-transform: uppercase;
 }
 .blogPosts{
+  
   height: 100%;
   background: linear-gradient(0.25turn, #fff0d1, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff, #fff0d1);
 
@@ -34,9 +35,9 @@ a:focus {
   color: rgb(176, 202, 219);
 }
 .button {
-  background-color: #353535;
-  border: 2px solid rgb(87, 87, 87);
-  color: white;
+  background-color: #e1d0b0;
+  border: 3px solid #ffd78c;
+  color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
   display: flex;
@@ -306,6 +307,7 @@ padding-bottom: 20px;
   }
   .button1{
     width: 300px;
+    
   }
   .post{
     width: 800px;
