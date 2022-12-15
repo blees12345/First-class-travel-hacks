@@ -36,7 +36,7 @@ a:focus {
 }
 .button {
   background-color: #e1d0b0;
-  border: 3px solid #ffd78c;
+  border: 3px inset #eed6aa;
   color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
@@ -44,6 +44,7 @@ a:focus {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  font-weight:600;
   margin: 0px 20px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
@@ -178,6 +179,7 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .post-logo {
