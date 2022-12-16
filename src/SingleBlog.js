@@ -28,6 +28,7 @@ const SingleBlog = () => {
 	}, [id]);
 	return (
 		<div className='singleBlog'>
+			
 			<section className='single-post'>
 				<header className='post-header'>
 					<img

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useSession } from 'react';
-import Button from 'react-bootstrap/Button';
+
 import Modal from 'react-bootstrap/Modal';
 import vacation from './vacation.jpg';
 
@@ -11,7 +11,7 @@ function HomePage() {
 		
 			const timeout = setTimeout(() => {
 				setShow(false);
-			}, );
+			}, 3000 );
 		}, []);
 
 
@@ -20,22 +20,24 @@ function HomePage() {
   useEffect(() => {
     // Access count value from session storage
     var pageView = sessionStorage.getItem("pageView");
+	
     if (pageView == null ) {
 			// Initialize page views count
 			pageView = 0;
 	}	else  {
 			pageView = Number(pageView) + 1;
 		};
-	if(pageView == 1){
+	if(pageView > 1){
 		return setShow(false)
 	}
-		
-	 
+	
     // Update session storage
     sessionStorage.setItem("pageView", pageView);
     setCount(pageView);
   }, []); 
-//  sessionStorage.clear();
+  	console.log(count);
+		
+ //sessionStorage.clear();
 
 	return (
 		<div onClick={() => setShow(false)}  >
