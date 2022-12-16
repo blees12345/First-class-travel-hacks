@@ -28,39 +28,37 @@ const SingleBlog = () => {
 	}, [id]);
 	return (
 		<div className='singleBlog'>
-				<section className='single-post'>
-					<header className='post-header'>
-						<img
-							src={singleBlogPost?.fields?.blogImage?.fields?.file?.url}
-							alt={singleBlogPost?.fields?.title}
-							width='578'
-							height='291'
-						/>
+			<section className='single-post'>
+				<header className='post-header'>
+					<img
+						src={singleBlogPost?.fields?.blogImage?.fields?.file?.url}
+						alt={singleBlogPost?.fields?.title}
+						width='578'
+						height='291'
+					/>
 
-						<h2 className='post-title '>{singleBlogPost?.fields?.title}</h2>
-						<h2 className='post-title'>
-							{singleBlogPost?.fields?.blogTitle}
-						</h2>
-						<p className='post-meta'>
-							By{' '}
-							<a className='post-author'>
-								{singleBlogPost?.fields?.blogAuthor}
-							</a>{' '}
-							Date: <span></span>
-							<small>{singleBlogPost?.fields?.createdDate.slice(0, 10)}</small>
-						</p>
-					</header>
+					<h2 className='post-title '>{singleBlogPost?.fields?.title}</h2>
+					<h2 className='post-title'>{singleBlogPost?.fields?.blogTitle}</h2>
+					<p className='post-meta'>
+						By{' '}
+						<a className='post-author'>{singleBlogPost?.fields?.blogAuthor}</a>{' '}
+						Date: <span></span>
+						<small>{singleBlogPost?.fields?.createdDate.slice(0, 10)}</small>
+					</p>
+				</header>
+				<div  className='post-image'>
 					<div className='post-description'>
 						<ReactMarkdown children={singleBlogPost?.fields?.postContent} />
 					</div>
-						<img className='image'
-							src={singleBlogPost?.fields?.blogImage2?.fields?.file?.url}
-							title=''
-							alt={singleBlogPost?.fields?.title}
-						/>
-					
-				</section>
-			
+					<img
+						className='image'
+						src={singleBlogPost?.fields?.blogImage2?.fields?.file?.url}
+						title=''
+						alt={singleBlogPost?.fields?.title}
+					/>
+				</div>
+			</section>
+
 			<div className='footer'>
 				<div className='pure-menu pure-menu-horizontal'></div>
 			</div>
