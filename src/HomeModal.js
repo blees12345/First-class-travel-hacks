@@ -27,7 +27,7 @@ function HomePage() {
 	}	else  {
 			pageView = Number(pageView) + 1;
 		};
-	if(pageView > 1){
+	if(pageView >= 1){
 		return setShow(false)
 	}
 	
@@ -37,7 +37,7 @@ function HomePage() {
   }, []); 
   	console.log(count);
 		
- //sessionStorage.clear();
+//sessionStorage.clear();
 
 	return (
 		<div onClick={() => setShow(false)}  >
