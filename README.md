@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app will help show you all the tips and tricks to travel on business or first class for the fraction of the price.
 
 ## Available Scripts
 
