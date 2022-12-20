@@ -1,6 +1,7 @@
 # Description
 
 This app will help show you all the tips and tricks to travel on business or first class for the fraction of the price.
+backend using contentful
 
 ## Available Scripts
 
