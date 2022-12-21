@@ -2,6 +2,7 @@
 
 This app will help show you all the tips and tricks to travel on business or first class for the fraction of the price.
 backend using contentful
+![Screen Shot 2022-12-20 at 4 41 52 PM](https://user-images.githubusercontent.com/74582512/208793906-428dd213-67d1-42c0-ad2f-869c9284d6c9.png)
 
 ## Available Scripts
 
