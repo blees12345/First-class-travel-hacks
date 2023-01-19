@@ -10,7 +10,6 @@ import HomeModal from './HomeModal'
 function App() {
 	return (
 		<div className='main'>
-		
 			<Router>
 				<Navbar collapseOnSelect expand='lg' className='navbar'>
 					<Link to='/'>
@@ -31,7 +30,9 @@ function App() {
 								href='blogDetails/3mLKIIfhloEtK1ySi9zit8#/blogDetails/3mLKIIfhloEtK1ySi9zit8'>
 								Earning Points & Miles
 							</Nav.Link>
-							<Nav.Link className='navlink' href='/creditcards'>
+							<Nav.Link
+								className='navlink'
+								href='blogDetails/5twa4FVDUlyHwyVX8S6p5h#/blogDetails/5twa4FVDUlyHwyVX8S6p5h'>
 								Credit Cards
 							</Nav.Link>
 							<Nav.Link className='navlink' href='/miles&redemption'>
